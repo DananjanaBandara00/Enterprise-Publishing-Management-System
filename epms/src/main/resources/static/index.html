@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/rethink-sans.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Planet</title>
+
+    <!-- Shared Header Styles -->
+    <link rel="stylesheet" href="/css/header.css">
+
+    <!-- Shared Footer Styles -->
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- Home page specific styles (Vision / Mission section) -->
+    <link rel="stylesheet" href="/css/home.css">
+
+    <!-- Homepage hero carousel (customer promotions) -->
+    <link rel="stylesheet" href="/css/home-hero.css">
+
+    <!-- Font Awesome (required by Header & Footer icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<!-- ==================== SHARED HEADER ==================== -->
+<div id="header-container"></div>
+
+<!-- ==================== PAGE CONTENT ==================== -->
+<section id="rp-hero" class="rp-hero" aria-roledescription="carousel" aria-label="Sales, offers and news" tabindex="-1"></section>
+
+<section id="about-reading-planet" class="rp-section" aria-labelledby="rp-section-heading">
+    <div class="rp-container">
+
+        <!-- Three clickable image cards -->
+        <div class="rp-image-grid">
+            <a href="/reading-planet" class="rp-image-card">
+                <img src="/images/reading-planet.png"
+                     alt="Reading Planet"
+                     class="rp-image-card__img"
+                     loading="lazy">
+            </a>
+
+            <a href="/work-with-us" class="rp-image-card">
+                <img src="/images/work-with-us.png"
+                     alt="Work With Us"
+                     class="rp-image-card__img"
+                     loading="lazy">
+            </a>
+
+            <a href="/getting-published.html" class="rp-image-card">
+                <img src="/images/getting-published.png"
+                     alt="Getting Published"
+                     class="rp-image-card__img"
+                     loading="lazy">
+            </a>
+        </div>
+
+        <!-- Vision + Mission cards -->
+        <div class="rp-info-grid">
+            <article class="rp-info-card rp-vision">
+                <h2 class="rp-info-card__heading">Vision</h2>
+                <p class="rp-info-card__text">
+                    To create a vibrant reading community that connects readers with inspiring stories and knowledge, fostering a lifelong love for books while empowering local authors to reach readers around the world.
+                </p>
+            </article>
+
+            <article class="rp-info-card rp-mission">
+                <h2 class="rp-info-card__heading">Mission</h2>
+                <p class="rp-info-card__text">
+                    To discover, promote, and connect readers with quality literature by providing a platform for readers and authors to explore, share, and celebrate the power of books, while supporting emerging writers and enriching the reading experience.
+                </p>
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<main style="padding: 2rem; text-align: center; color: #666;">
+    <p></p>
+</main>
+
+<!-- ==================== SHARED FOOTER ==================== -->
+<div id="footer-container"></div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<!-- Order is important -->
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/load-components.js"></script>
+<script src="/js/home-hero.js"></script>
+
+</body>
+</html>

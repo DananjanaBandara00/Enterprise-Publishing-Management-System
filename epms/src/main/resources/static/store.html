@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/rethink-sans.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store – Reading Planet</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+<body>
+<div id="header-container"></div>
+
+<section class="auth-page-title">
+    <div class="auth-page-title-inner">
+        <h1>Online Store</h1>
+        <p class="auth-breadcrumb">
+            <a href="/">Home</a>
+            <span>/</span>
+            <span>Online Store</span>
+        </p>
+    </div>
+</section>
+
+<!-- ONLY store content area is customized below -->
+<main class="store-page">
+    <div class="store-container">
+
+        <div class="store-search-bar">
+            <i class="fas fa-search"></i>
+            <input type="search" id="storeSearch" placeholder="Search books by title or author..." autocomplete="off">
+        </div>
+
+        <!-- Top Categories -->
+        <section class="store-section" id="sectionCategories">
+            <div class="section-head">
+                <h2>Top Categories</h2>
+            </div>
+            <div class="category-scroll" id="topCategories">
+                <div class="store-loading">Loading categories...</div>
+            </div>
+        </section>
+
+        <!-- Search results (shown only when searching) -->
+        <section class="store-section" id="sectionSearch" hidden>
+            <div class="section-head">
+                <h2>Search results</h2>
+                <span class="section-count" id="searchCount"></span>
+            </div>
+            <div class="book-row" id="searchResults"></div>
+            <p class="store-empty" id="searchEmpty" hidden>No books match your search.</p>
+        </section>
+
+        <!-- New Arrivals -->
+        <section class="store-section" id="sectionNew">
+            <div class="section-head">
+                <h2>New Arrivals</h2>
+            </div>
+            <div class="book-row" id="newArrivals"></div>
+        </section>
+
+        <!-- Featured / All books by category blocks injected here -->
+        <div id="categorySections"></div>
+
+        <!-- All Books -->
+        <section class="store-section" id="sectionAll">
+            <div class="section-head">
+                <h2>All Books</h2>
+                <span class="section-count" id="allCount"></span>
+            </div>
+            <div class="book-grid" id="allBooks"></div>
+            <p class="store-empty" id="allEmpty" hidden>No published books yet. Please check back soon.</p>
+        </section>
+    </div>
+</main>
+
+<div id="footer-container"></div>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+<script src="/js/load-components.js"></script>
+<script src="/js/cart-utils.js"></script>
+<script src="/js/cart-drawer.js"></script>
+<script src="/js/store.js"></script>
+</body>
+</html>
